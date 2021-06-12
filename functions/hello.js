@@ -7,6 +7,7 @@ exports.handler = async event => {
     axios.get('https://swapi.dev/api/people/1')
         .then(res=>res.json())
         .then(data=>swapiName=data)
+        console.log(swapiName);
     return {
       statusCode: 200,
       body: `Hello ${swapiName.name}!`
