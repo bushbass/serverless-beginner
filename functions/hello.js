@@ -1,6 +1,6 @@
 
 exports.handler = async event => {
-    const axios = require(axios)
+  const axios = require('../node_modules/axios')
     const swapiName = ''
     function getSwapi(){
         axios.get('https://swapi.dev/api/people/1')
