@@ -8,6 +8,6 @@ exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
-      body: `Hello ${data.name}!`
+      body: `Hello ${data.data.name}!`
     }
   }
