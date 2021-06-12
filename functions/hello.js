@@ -2,12 +2,8 @@
 exports.handler = async event => {
   const axios = require('../node_modules/axios')
     const swapiName = {}
-    await axios.get('https://swapi.dev/api/people/1')
-        .then(res=>res.json())
-        .then(data=>{
-          swapiName=data;
-          console.log('inside axios');
-        })
+    const data =await axios.get('https://swapi.dev/api/people/1')
+       console.log(data);
     
     const subject = event.queryStringParameters.name || 'World'
     return {
