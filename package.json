@@ -1,0 +1,23 @@
+{
+  "name": "dodds-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bushbass/serverless-beginner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bushbass/serverless-beginner/issues"
+  },
+  "homepage": "https://github.com/bushbass/serverless-beginner#readme"
+}
