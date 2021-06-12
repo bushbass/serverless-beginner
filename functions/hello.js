@@ -5,10 +5,10 @@ function getSwapi(){
     .then(res=>res.json())
     .then(json=>swapiName=json.name)
 }
-getSwapi()
 
 exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
+    getSwapi()
     return {
       statusCode: 200,
       body: `Hello ${swapiName}!`
