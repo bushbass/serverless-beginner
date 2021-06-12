@@ -6,7 +6,7 @@ exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
     axios.get('https://swapi.dev/api/people/1')
         .then(res=>res.json())
-        .then(data=>swapiName=data)
+        .then(data=>{swapiName=data;console.log('inside axios');})
         console.log(swapiName);
     return {
       statusCode: 200,
